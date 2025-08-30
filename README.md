@@ -17,3 +17,16 @@ This is a modern, fully responsive, single-page personal portfolio website for D
 - Functional Contact Form: A contact form that submits data to a Google Sheet without requiring a dedicated backend server. It provides submission status feedback to the user.
 
 - Mobile-First Hamburger Menu: On smaller screens, the navigation collapses into a user-friendly hamburger menu.
+
+# 🛠️ Technologies Used
+This project was built using the following technologies:
+Frontend:
+- HTML5
+- CSS3 (with Flexbox and Grid)
+- JavaScript (ES6)
+
+Libraries:
+- Typed.js: For the hero section typing animation.
+- Font Awesome: For icons.
+- Backend (for Contact Form):
+- Google Apps Script: To process and save form submissions to a Google Sheet.
