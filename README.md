@@ -30,3 +30,12 @@ Libraries:
 - Font Awesome: For icons.
 - Backend (for Contact Form):
 - Google Apps Script: To process and save form submissions to a Google Sheet.
+
+# 🚀 Getting Started
+To get a local copy up and running, follow these simple steps.
+
+- Prerequisites
+You only need a modern web browser (like Chrome, Firefox, or Safari).
+
+- Installation
+Clone the repository to your local machine:
