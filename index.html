@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolioWebsite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/696cecf34e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="logo">
+                    <img src="images/logo.png" alt="Divyanshi Sahu Logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-sun" id="theme-toggle"></i></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <section id="home" class="hero">
+
+                <div class="hero-quote">
+                    <blockquote>
+                        "The only way to do great work is to love what you do."
+                        <cite>– Steve Jobs</cite>
+                    </blockquote>
+                </div>
+                <div class="hero-content">
+                    <h1 id="typing-name">Divyanshi Sahu</h1>
+                    <span class="tagline" id="typing-tagline"></span>
+                    <p><a href="#portfolio" class="cta-button">Explore My Work</a></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+ <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me2.jpg" alt="Divyanshi Sahu">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me.</h1>
+                    <p>
+                        Aspiring software developer skilled in Python, Java, with a strong background in data
+                        engineering and cloud computing. As an Amazon Future Engineer Scholar 2024, I'm enthusiastic
+                        about leveraging technology to solve real-world problems and continuously learning new skills. I
+                        bring strong leadership experience, excellent communication skills, and a proactive approach to
+                        innovative projects.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-list">
+                                    <div class="skill-item"><img src="images/logos/java.svg" alt="Java"><span>Java</span></div>
+                                    <div class="skill-item"><img src="images/logos/python.svg" alt="Python"><span>Python</span></div>
+                                    
+                                    <div class="skill-item"><img src="images/logos/c.svg" alt="C Language"><span>C</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Web Development</h4>
+                                <div class="skill-list">
+                                    <div class="skill-item"><img src="images/logos/html.svg" alt="HTML5"><span>HTML</span></div>
+                                    <div class="skill-item"><img src="images/logos/css.svg" alt="CSS3"><span>CSS</span></div>
+                                    <div class="skill-item"><img src="images/logos/javascript.svg" alt="JavaScript"><span>JavaScript</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Database</h4>
+                                <div class="skill-list">
+                                    <div class="skill-item"><img src="images/logos/mongodb.svg" alt="MongoDB"><span>MongoDB</span></div>
+                                    <div class="skill-item"><img src="images/logos/sql.svg" alt="SQL"><span>SQL</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Cloud Computing</h4>
+                                <div class="skill-list">
+                                    <div class="skill-item"><img src="images/logos/aws.svg" alt="Amazon Web Services"><span>AWS</span></div>
+                                    <div class="skill-item"><img src="images/logos/google-cloud.svg" alt="Google Cloud"><span>Google Cloud</span></div>
+                                </div>
+                            </div>
+                             <div class="skill-category">
+                                <h4>AI & ML</h4>
+                                <div class="skill-list">
+                                    <div class="skill-item"><img src="images/logos/machine-learning-svgrepo-com.svg" alt="ML"><span>Machine Learning Foundations</span></div>
+                                    <div class="skill-item"><img src="images/logos/ai-svgrepo-com.svg" alt="GenAI"><span>Generative AI </span></div>
+                                </div>
+                            </div>
+                             <div class="skill-category">
+                                <h4>Developer Tools </h4>
+                                <div class="skill-list">
+                                    <div class="skill-item"><img src="images/logos/github.svg" alt="GitHub"><span>GitHub</span></div>
+                                    <div class="skill-item"><img src="images/logos/vscODE.svg" alt="VSCode"><span>VS Code</span></div>
+                                    <!-- <div class="skill-item"><img src="images/logos/docker-svgrepo-com.svg" alt="JavaScript"><span>Docker</span></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="competencies-list">
+                            <h4>Key Competencies</h4>
+                            <p>Data Structures & Algorithms •Data-driven Strategic Planning • Critical Thinking • Logical Reasoning • Strong Interpersonal Skills • Leadership • Active Listening</p>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">May 2025-Aug 2025</div>
+                                <div class="timeline-content">
+                                    <h3>Aspire Leaders Program</h3>
+                                    <!-- <p>Recognized as a top-performing computer science student through a prestigious national scholarship. Selected for academic excellence, leadership potential, and a passion for technology.</p> -->
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2025-Present</div>
+                                <div class="timeline-content">
+                                    <h3>Katalyst India Mentee</h3>
+                                    <!-- <p>Recognized as a top-performing computer science student through a prestigious national scholarship. Selected for academic excellence, leadership potential, and a passion for technology.</p> -->
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024-Present</div>
+                                <div class="timeline-content">
+                                    <h3>Amazon Future Engineer Scholar</h3>
+                                    <!-- <p>Recognized as a top-performing computer science student through a prestigious national scholarship. Selected for academic excellence, leadership potential, and a passion for technology.</p> -->
+                                </div>
+                            </div>
+                    
+                            <!-- <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h3>AWS Academy Graduate - Data Engineering</h3>
+                                    <p>Completed comprehensive, hands-on training in data engineering principles, focusing on building and managing data pipelines, and leveraging key AWS data services for scalable solutions.</p>
+                                </div>
+                            </div> -->
+                            <!-- <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023-27</div>
+                                <div class="timeline-content">
+                                    <h3>AWS Academy Graduate - Cloud Foundations</h3>
+                                    <p>Acquired foundational knowledge of cloud computing concepts and core AWS services, including infrastructure, security, and cloud architecture principles.</p>
+                                </div>
+                            </div> -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2019-2022</div>
+                                <div class="timeline-content">
+                                    <h3>House Vice Captain (Leadership)</h3>
+                                    <!-- <p>Elected to a key leadership role, responsible for mentoring students, organizing school-wide events, and fostering a collaborative and competitive spirit within the house.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023 - 2027</div>
+                                <div class="timeline-content">
+                                    <h3>B.Tech-CSE(Data Science)</h3>
+                                    
+                                    <p><a href="https://www.glbitm.org/">GL Bajaj Institute of Technology & Management</a>, Greater Noida.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2021-22</div>
+                                <div class="timeline-content">
+                                    <h3>Senior Secondary (Class 12th)</h3>
+                                    <p><a href="https://ambikaprasadmemorial.com/">Ambika Prasad Memorial Public School</a>, Unnao, UP.<br>Scored: 92.4%</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2019-20</div>
+                                <div class="timeline-content">
+                                    <h3>High School (Class 10th)</h3>
+                                    <p><a href="https://ambikaprasadmemorial.com/">Ambika Prasad Memorial Public School,</a> Unnao, UP.<br>Scored: 94%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Portfolio.</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating responsive and modern web applications using HTML, CSS, JavaScript and latest frameworks with focus on user experience.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Engineering</h2>
+                    <p>Designing and implementing data pipelines, database management, and cloud-based data solutions using AWS services.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>AWS certified professional with expertise in cloud foundations and data engineering on AWS platform.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="project-card">
+                    <img src="images/weatherapp.png" alt="Weather Application Project">
+                    <div class="project-info">
+                        <h3 class="project-title">Weather Application</h3>
+                        <p class="project-description">Developed a desktop weather app using Python's Tkinter library that fetches and displays real-time weather data from a third-party API.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <a href="https://github.com/DivyanshiSahu2024/PythonProjects/blob/main/WEATHERAPP.py" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/pipeline.png" alt="Data Engineering Project">
+                    <div class="project-info">
+                        <h3 class="project-title">Finance Data Pipeline</h3>
+                        <p class="project-description">Automated stock data pipeline using python, MySQL with real-time analytics and dashboard. Includes automation with Windows Task Scheduler for daily updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Data Engineering</span>
+                            <!-- <span class="tag">Python</span> -->
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <a href="https://github.com/DivyanshiSahu2024/finance-data-pipeline" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/portfolio.png" alt="Cloud Computing Project">
+                    <div class="project-info">
+                        <h3 class="project-title"> Portfolio</h3>
+                        <p class="project-description">A responsive personal portfolio built using HTML, CSS, JavaScript.  It is designed to showcase skills, experience, projects, and contact information in a clean, professional, and user-friendly format.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/DivyanshiSahu2024/Portfolio" class="project-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="https://github.com/DivyanshiSahu2024" class="btn">See More</a> -->
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Connect.</h1>
+                    <p><a href="mailto:divyanshisahuds@gmail.com"><i class="fa-solid fa-envelope"></i>divyanshisahuds@gmail.com</a></p>
+                    <p><i class="fa-solid fa-map-marker-alt"></i>Greater Noida, Uttar Pradesh, India</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/divyanshi-sahu-4b2758288/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/DivyanshiSahu2024"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/@MissEngineerX"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com/MissEngineerX"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://medium.com/@MissEngineerX"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                        <button type="submit" id="submit-button" class="btn btn2">
+                            <span class="button-text">Send Message</span>
+                            <i class="fas fa-spinner fa-spin button-loader"></i>
+                        </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @MissEngineerX. Made with <i class="fa-solid fa-heart"></i> by Divyanshi Sahu</p>
+        </div>
+    </div>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
