@@ -1,37 +1,58 @@
 # Personal Portfolio Website
-This is a modern, fully responsive, single-page personal portfolio website for Divyanshi Sahu, an aspiring software developer. It is designed to showcase skills, experience, projects, and contact information in a clean, professional, and user-friendly format.
 
-# Live Demo: 
-https://divyanshisahu2024.github.io/Portfolio/
+A modern, high-performance, single-page personal portfolio website for **Divyanshi Sahu**, Amazon Future Engineer Scholar and aspiring Software Engineer specializing in Data Science. Engineered to showcase projects, skills, leadership experience, and technical certifications.
 
-# ✨ Key Features
-- Modern & Responsive Design: The layout is fully optimized for desktops, tablets, and mobile devices.
+**Live Application:** [divyanshisahu2024.github.io/Portfolio](https://divyanshisahu2024.github.io/Portfolio/)
 
-- Dual Theme (Light/Dark Mode): Users can toggle between light and dark themes. The preference is automatically saved in the browser for future visits.
+---
 
-- Dynamic Typing Effect: An engaging, animated typing effect for professional titles in the hero section.
+## ✨ Key Features & Engineering Highlights
 
-- Interactive Tabs: The "About Me" section uses JavaScript-powered tabs to neatly organize Skills, Experience, and Education.
+- **Zero-Flicker Dual Theming (Dark/Light Mode)**: Pure CSS Custom Properties design system with `localStorage` persistence and early inline anti-FOUC script. Dynamically synchronizes both color palettes and raster branding logos.
+- **Interactive Project Filtering**: Instant client-side category filtering (`All`, `Full-Stack`, `Data Engineering`, `AI & ML`) with smooth CSS fade transitions.
+- **Serverless Form Ingestion with Honeypot Anti-Spam**: Contact form sends asynchronous `FormData` payloads via native `fetch()` to a Google Apps Script REST endpoint, logging submissions to a Google Sheet. Includes a client-side honeypot field to block automated bot spam.
+- **Dynamic Micro-Interactions**: Hero section typewriter animation powered by Typed.js, tabbed navigation for Skills/Experience/Education, sticky glassmorphic navigation bar, and smooth "Back to Top" scrolling.
+- **SEO & Open Graph Social Cards**: Configured with rich metadata, canonical URLs, Twitter cards, and Open Graph previews for sharing on LinkedIn, GitHub, and Twitter.
+- **Automated CI/CD**: GitHub Actions workflow automatically verifies and deploys changes to GitHub Pages upon push to `main`.
 
-- Sticky Scrolling Navigation: The navigation bar sticks to the top of the page on scroll for easy access.
+---
 
-- Smooth Scrolling: Clicking navigation links smoothly scrolls the page to the corresponding section.
+## 🛠️ Tech Stack & Architecture
 
-- Functional Contact Form: A contact form that submits data to a Google Sheet without requiring a dedicated backend server. It provides submission status feedback to the user.
+- **Frontend**: Semantic HTML5, CSS3 (CSS Variables, Flexbox, Grid, Glassmorphism), Vanilla JavaScript (ES6+).
+- **Libraries & Icons**: [Typed.js](https://github.com/mattboldt/typed.js/) (hero animation), [Font Awesome 6](https://fontawesome.com/) (vector icons).
+- **Backend (Serverless)**: Google Apps Script Web App (Webhook ingestion into Google Sheets).
+- **CI/CD & Hosting**: GitHub Actions (`.github/workflows/static.yml`), GitHub Pages CDN edge delivery.
 
-- Mobile-First Hamburger Menu: On smaller screens, the navigation collapses into a user-friendly hamburger menu.
+---
 
-# 🛠️ Technologies Used
-This project was built using the following technologies:
-Frontend:
-- HTML5
-- CSS3 (with Flexbox and Grid)
-- JavaScript (ES6)
+## 📂 Project Structure
 
-Libraries:
-- Typed.js: For the hero section typing animation.
-- Font Awesome: For icons.
-- Backend (for Contact Form):
-- Google Apps Script: To process and save form submissions to a Google Sheet.
+```text
+Portfolio-main/
+├── .github/workflows/
+│   └── static.yml         # GitHub Actions CI/CD deployment pipeline
+└── docs/
+    ├── index.html         # Semantic structure, Open Graph SEO & Anti-FOUC
+    ├── style.css          # CSS Variables, theming tokens & responsive layout
+    ├── script.js          # Tab navigation, project filters, async form & back-to-top
+    └── images/            # Project previews, SVG skill icons, CV & assets
+```
+
+---
+
+## 🚀 Local Development
+
+1. Clone or download the repository:
+   ```bash
+   git clone https://github.com/DivyanshiSahu2024/Portfolio.git
+   ```
+2. Navigate into `docs/` and open `index.html` directly in any modern browser, or run a local server:
+   ```bash
+   # Using Python 3
+   python -m http.server 8000
+   ```
+3. Open `http://localhost:8000/docs` in your browser.
+
 
 
